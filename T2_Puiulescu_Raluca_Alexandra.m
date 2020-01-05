@@ -1,4 +1,5 @@
-t=0:0.001:40;
+function jdask()
+    t=0:0.001:40;
 T=40;
 % Original Function
 x=(square(t/(2.025*pi), 15/T*100)+1)/2;
@@ -20,7 +21,9 @@ w=2*pi/40;
  plot(t,SFC,'m'),  title ('Functii'), xlabel('timp(secunde)');
  legend(' Original ',' SFC');
  
-%figure
+figure(2);
 Ak(1)=Ak(51);
 Ak(1)=3/8;
-%stem([0:N],Ak,'k'), grid, title('Spectru de amplitudini'), xlabel('frecventa w'), ylabel('Amplitudinea Ak');
+stem([0:N],Ak,'k'), grid, title('Spectru de amplitudini'), xlabel('frecventa w'), ylabel('Amplitudinea Ak');
+    
+end
